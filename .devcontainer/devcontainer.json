@@ -1,7 +1,7 @@
 // Format details: https://aka.ms/devcontainer.json
 // Custom Dockerfile: https://containers.dev/guide/dockerfile
 {
-  "name": "py-api-template",
+  "name": "my-own-assistant",
 
   // https://github.com/devcontainers/templates/tree/main/src/ubuntu
   "image": "mcr.microsoft.com/devcontainers/base:jammy",
@@ -11,9 +11,10 @@
     "ghcr.io/devcontainers/features/python:1": {
       "installTools": true,
       "toolsToInstall": "poetry",
-      "version": "3.11"
+      "version": "3.12"
     },
-    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
+    "ghcr.io/devcontainers/features/node:1": {}
   },
 
   "customizations": {
@@ -40,6 +41,11 @@
       "type": "volume",
       "source": "apt-cache",
       "target": "/var/cache/apt"
+    },
+    {
+      "type": "volume",
+      "source": "apt-list-cache",
+      "target": "/var/lib/apt"
     }
   ],
 

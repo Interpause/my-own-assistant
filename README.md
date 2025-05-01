@@ -1,4 +1,14 @@
-# py-api-template
+# My Own Assistant
+
+Just gonna see if it is now way easier to make your own fully integrated assistant
+using MCPs. Fully self-hosted too by bringing your own OpenAI compatible API. Just
+to take advantage of the fact Qwen3-30B-A3B exists.
+
+## TODOs
+
+- [ ] Try switching from poetry to uv.
+
+## py-api-template
 
 Template for FastAPI-based API server. Features:
 
